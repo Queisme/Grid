@@ -1,0 +1,29 @@
+.flex-container {
+  display: flex;
+  gap: 5px;
+}
+
+.flex-container div {
+  background-color: fuchsia;
+  border: 4px solid black;
+  height: 100px;
+  flex: 1;
+  margin-bottom: 32px;
+}
+
+/* Flex is shorthand for flex-grow, flex-shrink, and flex-basis
+
+flex: 1; is shorthand for flex-grow: 1, flex-shrink: 1, flex-basis: 0;
+*/
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 75px 75px 75px;
+  grid-template-rows: 75px 75px 75px;
+  gap: 32px;
+}
+
+.card {
+  background-color: fuchsia;
+  border: 4px solid black;
+}

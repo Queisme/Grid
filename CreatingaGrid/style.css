@@ -1,0 +1,17 @@
+.grid-container {
+  display: grid;
+  /* Define the grid track */
+  /* grid-template-columns: 50px 50px; */
+  /* grid-template-rows: 50px 50px; */
+  grid-template: 75px 75px / 250px 250px;
+  /* set the implicit grid track sizes using the grid-auto-rows & grid-auto-columns */
+  grid-auto-rows: 75px;
+  grid-auto-columns: 250px;
+  column-gap: 5px;
+  row-gap: 10px;
+  text-align: center;
+}
+
+.grid-container > div {
+  border: 1px solid black;
+}

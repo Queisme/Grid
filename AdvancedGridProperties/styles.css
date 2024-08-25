@@ -1,0 +1,39 @@
+.container {
+  /* resize is a property that allows the user to resize the container by clicking and dragging from the bottom right corner. */
+  /* overflow: auto - enables scrolling if resizing the container to be smaller than grid can accommodate */
+  /* fr stands for fractional units - it's a way of distributing whatever remaining space is left in a grid -- makes grid dynamic */
+  /* min-content = “smallest” size the grid will allow its items to go */
+  /* minmax() - each grid item width will grow and skrink with the container, however, as the grid shrinks the column tracks will stop shrinking at 150px and as the grid grows they willstop growing at 200px */
+  /* clamp() - clamp(minimum-size, ideal-size, maximum-size) */
+  /* auto-fill and auto-fit will return the largest possible positive integer without the grid items overflowing their container */
+  resize: both;
+  overflow: auto;
+  display: grid;
+  grid-template: repeat(2, 1fr) / repeat(auto-fit, minmax(100px, 1fr));
+  gap: 15px;
+  border: 3px solid black;
+  padding: 10px;
+}
+
+.container div {
+  border: 1px solid black;
+  text-align: center;
+  background-color: #025bcf;
+}
+
+.container2 {
+  margin-top: 15px;
+  resize: both;
+  overflow: auto;
+  display: grid;
+  grid-template: repeat(2, 1fr) / repeat(auto-fill, minmax(100px, 1fr));
+  gap: 15px;
+  border: 3px solid black;
+  padding: 10px;
+}
+
+.container2 > div {
+  border: 1px solid black;
+  text-align: center;
+  background-color: #025bcf;
+}

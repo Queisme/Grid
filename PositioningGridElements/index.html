@@ -7,7 +7,46 @@
     <title>Positioning Grid Elements</title>
   </head>
   <body>
-    <h1>Positioning Grid Elements</h1>
+    <hgroup>
+      <h1>Positioning Grid Elements</h1>
+      <p>Reviewing tracks</p>
+    </hgroup>
+    <ul>
+      <p>Terminology to better understand the different grid parts</p>
+      <li>
+        grid-template = defines the tracks = grid track is any single row or
+        column on a grid
+      </li>
+      <li>whenever we create grid tracks, grid lines are created implicitly</li>
+      <li>
+        cells - the space in a grid shared by a single row track and a single
+        column track is a grid cell. (ie: A, B, C, etc.)
+      </li>
+    </ul>
+    <h2>3 x 3 grid</h2>
+    <div class="container">
+      <div>A</div>
+      <div>B</div>
+      <div>C</div>
+      <div>D</div>
+      <div>E</div>
+      <div>F</div>
+      <div>G</div>
+      <div>H</div>
+      <div>I</div>
+    </div>
+    <hgroup>
+      <h3>Mock Floor Plan</h3>
+      <p>5 x 5 grid</p>
+    </hgroup>
+    <div class="floorplan">
+      <div class="room" id="living-room">Living Room</div>
+      <div class="room" id="kitchen">Kitchen</div>
+      <div class="room" id="bedroom">Bedroom</div>
+      <div class="room" id="bathroom">Bathroom</div>
+      <div class="room" id="closet">Closet</div>
+    </div>
+
     <script src="script.js"></script>
   </body>
 </html>
